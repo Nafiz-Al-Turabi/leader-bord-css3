@@ -131,3 +131,32 @@ hr {
     padding: 5px 5px;
     border-radius: 15px;
 }
+/* Media for responsive query  */
+/* Mobile devices */
+@media only screen and (max-width: 568px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .player{
+        flex-direction: column
+        ;
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+    .course{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .courses{
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
