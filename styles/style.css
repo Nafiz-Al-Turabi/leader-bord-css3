@@ -133,7 +133,7 @@ hr {
 }
 /* Media for responsive query  */
 /* Mobile devices */
-@media only screen and (max-width: 568px) {
+@media only screen and (max-width: 668px) {
     .container{
         width: 100%;
     }
@@ -159,4 +159,33 @@ hr {
         align-items: center;
     }
 
+}
+/* media query for tab  */
+@media screen and (min-width:689px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .player{
+        flex-direction: column
+        ;
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+    }
+    .course{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 50px;
+        row-gap: 50px;
+    }
+    .courses{
+        flex-direction: column;
+        
+    }
 }
